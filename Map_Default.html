@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a89556bf12d87131133a2c806553ae00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a89556bf12d87131133a2c806553ae00" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a89556bf12d87131133a2c806553ae00 = L.map(
+                "map_a89556bf12d87131133a2c806553ae00",
+                {
+                    center: [48.44407, 4.662629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_32dd58f4c2a0bd2a7864856f6a6df5a3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a89556bf12d87131133a2c806553ae00);
+        
+    
+            var feature_group_17f89779275d4bdccad3e4c144d22567 = L.featureGroup(
+                {}
+            ).addTo(map_a89556bf12d87131133a2c806553ae00);
+        
+    
+            var marker_fde6837a954248061ab34c11d9d7317a = L.marker(
+                [48.8588897, 2.3200410217200766],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_bda6732c29608cc44cedb53a6445854b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fde6837a954248061ab34c11d9d7317a.setIcon(icon_bda6732c29608cc44cedb53a6445854b);
+        
+    
+        var popup_12f08885b626ef8bcae7bd108b404398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be0fc7ea1f4ce7925bc7c55fd72f0a6a = $(`<div id="html_be0fc7ea1f4ce7925bc7c55fd72f0a6a" style="width: 100.0%; height: 100.0%;">Назва фільму:  Birthday Cake  Назва місця:  Paris, France</div>`)[0];
+                popup_12f08885b626ef8bcae7bd108b404398.setContent(html_be0fc7ea1f4ce7925bc7c55fd72f0a6a);
+            
+        
+
+        marker_fde6837a954248061ab34c11d9d7317a.bindPopup(popup_12f08885b626ef8bcae7bd108b404398)
+        ;
+
+        
+    
+    
+            var marker_b27ae488151ef9321428fa262b6132d2 = L.marker(
+                [48.85555168977377, 2.321251500430154],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_9dd4926abf38849d50ff99846772b034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b27ae488151ef9321428fa262b6132d2.setIcon(icon_9dd4926abf38849d50ff99846772b034);
+        
+    
+        var popup_406ff0a878870401950cb84efd11026d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c44955dbd7eb5b1ad5bf4d361dad23b4 = $(`<div id="html_c44955dbd7eb5b1ad5bf4d361dad23b4" style="width: 100.0%; height: 100.0%;">Назва фільму:  Chouchou  Назва місця:  Paris, France</div>`)[0];
+                popup_406ff0a878870401950cb84efd11026d.setContent(html_c44955dbd7eb5b1ad5bf4d361dad23b4);
+            
+        
+
+        marker_b27ae488151ef9321428fa262b6132d2.bindPopup(popup_406ff0a878870401950cb84efd11026d)
+        ;
+
+        
+    
+    
+            var marker_297f15564b38ff5ad9dea8c7019a2766 = L.marker(
+                [49.8158683, 6.1296751],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_0f4650bb668d587e80302defad33bb36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_297f15564b38ff5ad9dea8c7019a2766.setIcon(icon_0f4650bb668d587e80302defad33bb36);
+        
+    
+        var popup_e52a806af9571f96027ced0c3d47cd27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3221b72750a796c66994ff9a9ec675c = $(`<div id="html_a3221b72750a796c66994ff9a9ec675c" style="width: 100.0%; height: 100.0%;">Назва фільму:  J'ai toujours voulu �tre une sainte  Назва місця:  Luxembourg</div>`)[0];
+                popup_e52a806af9571f96027ced0c3d47cd27.setContent(html_a3221b72750a796c66994ff9a9ec675c);
+            
+        
+
+        marker_297f15564b38ff5ad9dea8c7019a2766.bindPopup(popup_e52a806af9571f96027ced0c3d47cd27)
+        ;
+
+        
+    
+    
+            var marker_ad9709f1a7a54e3125b1d7554aaa4a89 = L.marker(
+                [50.2604454, 2.7584256],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_797399d3da20d0d93b3acecbe845a50f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad9709f1a7a54e3125b1d7554aaa4a89.setIcon(icon_797399d3da20d0d93b3acecbe845a50f);
+        
+    
+        var popup_69d575f49e16549591f35903270a0f21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17a681b857db281c0cea541788c35e6 = $(`<div id="html_c17a681b857db281c0cea541788c35e6" style="width: 100.0%; height: 100.0%;">Назва фільму:  Agny  Назва місця:  (Agny)</div>`)[0];
+                popup_69d575f49e16549591f35903270a0f21.setContent(html_c17a681b857db281c0cea541788c35e6);
+            
+        
+
+        marker_ad9709f1a7a54e3125b1d7554aaa4a89.bindPopup(popup_69d575f49e16549591f35903270a0f21)
+        ;
+
+        
+    
+    
+            var marker_88ed81800c68e444acde83bab689cb63 = L.marker(
+                [45.2979109, 6.5822693],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_22371b621d662b4fe2211bfe5c4daca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88ed81800c68e444acde83bab689cb63.setIcon(icon_22371b621d662b4fe2211bfe5c4daca1);
+        
+    
+        var popup_46473cc90b36ef3419e0e5ea5a19638b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b9fa5c54566b4d4c4e197fcd16f5d4e = $(`<div id="html_8b9fa5c54566b4d4c4e197fcd16f5d4e" style="width: 100.0%; height: 100.0%;">Назва фільму:  Journey  Назва місця:  (Val Thorens)</div>`)[0];
+                popup_46473cc90b36ef3419e0e5ea5a19638b.setContent(html_8b9fa5c54566b4d4c4e197fcd16f5d4e);
+            
+        
+
+        marker_88ed81800c68e444acde83bab689cb63.bindPopup(popup_46473cc90b36ef3419e0e5ea5a19638b)
+        ;
+
+        
+    
+    
+            var marker_e4a4664fd38a7f2f29f5a7bcd7890f1a = L.marker(
+                [52.2434979, 5.6343227],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_f6bfb60e2fb7877ba9ff233e993043f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4a4664fd38a7f2f29f5a7bcd7890f1a.setIcon(icon_f6bfb60e2fb7877ba9ff233e993043f3);
+        
+    
+        var popup_96082681553d7d083084c75abc167d7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_388c1a5143dac426f28399187abfaacc = $(`<div id="html_388c1a5143dac426f28399187abfaacc" style="width: 100.0%; height: 100.0%;">Назва фільму:  Finding Family  Назва місця:  Netherlands</div>`)[0];
+                popup_96082681553d7d083084c75abc167d7e.setContent(html_388c1a5143dac426f28399187abfaacc);
+            
+        
+
+        marker_e4a4664fd38a7f2f29f5a7bcd7890f1a.bindPopup(popup_96082681553d7d083084c75abc167d7e)
+        ;
+
+        
+    
+    
+            var marker_d680edc596233b378781a5fab0e28466 = L.marker(
+                [51.30452805, 0.3658395948482357],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_680dfe07bff4844bd908d0501b3e1a5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d680edc596233b378781a5fab0e28466.setIcon(icon_680dfe07bff4844bd908d0501b3e1a5d);
+        
+    
+        var popup_97a56991540634fe012fe405e16c6e02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b995b156971b4442da3d7499103a69d = $(`<div id="html_8b995b156971b4442da3d7499103a69d" style="width: 100.0%; height: 100.0%;">Назва фільму:  "Trading Treasures"  Назва місця:  Addington, Kent, England, UK</div>`)[0];
+                popup_97a56991540634fe012fe405e16c6e02.setContent(html_8b995b156971b4442da3d7499103a69d);
+            
+        
+
+        marker_d680edc596233b378781a5fab0e28466.bindPopup(popup_97a56991540634fe012fe405e16c6e02)
+        ;
+
+        
+    
+    
+            var marker_87058c202fa480e091ae6eef3fd2bf35 = L.marker(
+                [45.4641943, 9.1896346],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_f373ab3e0150c7c3e094014a644b1c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87058c202fa480e091ae6eef3fd2bf35.setIcon(icon_f373ab3e0150c7c3e094014a644b1c51);
+        
+    
+        var popup_d591163d134cdf09f678be06189fd7b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e5b4c16ccd8dc6d99f65fbbd17aaa79 = $(`<div id="html_6e5b4c16ccd8dc6d99f65fbbd17aaa79" style="width: 100.0%; height: 100.0%;">Назва фільму:  Nuove cenerentole e vecchi principi  Назва місця:  Milano, Italy</div>`)[0];
+                popup_d591163d134cdf09f678be06189fd7b7.setContent(html_6e5b4c16ccd8dc6d99f65fbbd17aaa79);
+            
+        
+
+        marker_87058c202fa480e091ae6eef3fd2bf35.bindPopup(popup_d591163d134cdf09f678be06189fd7b7)
+        ;
+
+        
+    
+    
+            var marker_4e227e62d10dca940a4bc6d7f3aca9cf = L.marker(
+                [51.5432402, -0.0493621],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_59f6f24d224c5f731ab532f4cd7f621e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e227e62d10dca940a4bc6d7f3aca9cf.setIcon(icon_59f6f24d224c5f731ab532f4cd7f621e);
+        
+    
+        var popup_8aa2cd0d74cf6db03179ad5fddf810d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7ea7d03acbf7344631377b7bdaa4a6b = $(`<div id="html_e7ea7d03acbf7344631377b7bdaa4a6b" style="width: 100.0%; height: 100.0%;">Назва фільму:  One Plus One 2  Назва місця:  Hackney, London, England, UK</div>`)[0];
+                popup_8aa2cd0d74cf6db03179ad5fddf810d7.setContent(html_e7ea7d03acbf7344631377b7bdaa4a6b);
+            
+        
+
+        marker_4e227e62d10dca940a4bc6d7f3aca9cf.bindPopup(popup_8aa2cd0d74cf6db03179ad5fddf810d7)
+        ;
+
+        
+    
+    
+            var marker_fa6be8150dd1fa4508912ca4538e7d52 = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(feature_group_17f89779275d4bdccad3e4c144d22567);
+        
+    
+            var icon_267e5b2602c1e8d6a9c72f194f86a18a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa6be8150dd1fa4508912ca4538e7d52.setIcon(icon_267e5b2602c1e8d6a9c72f194f86a18a);
+        
+    
+        var popup_00b16c28cdbf5967148e52186814fb2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b760e818a77e13af76c926d0c1135a5e = $(`<div id="html_b760e818a77e13af76c926d0c1135a5e" style="width: 100.0%; height: 100.0%;">Назва фільму:  "EastEnders" (1985)  Назва місця:  London, England, UK</div>`)[0];
+                popup_00b16c28cdbf5967148e52186814fb2d.setContent(html_b760e818a77e13af76c926d0c1135a5e);
+            
+        
+
+        marker_fa6be8150dd1fa4508912ca4538e7d52.bindPopup(popup_00b16c28cdbf5967148e52186814fb2d)
+        ;
+
+        
+    
+    
+            var feature_group_b015b2f06c45635a004580666a734950 = L.featureGroup(
+                {}
+            ).addTo(map_a89556bf12d87131133a2c806553ae00);
+        
+    
+            var circle_be0bd7335c81a5ff3524d31f317f0f00 = L.circle(
+                [48.44407, 4.662629],
+                {"bubblingMouseEvents": true, "color": "#004", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#040", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 582886.6129603487, "stroke": true, "weight": 1}
+            ).addTo(feature_group_b015b2f06c45635a004580666a734950);
+        
+    
+        var popup_70cfbda8ab2cf02514ce316bbe783f2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b237d4822ffaf0a5420ce0128857909e = $(`<div id="html_b237d4822ffaf0a5420ce0128857909e" style="width: 100.0%; height: 100.0%;">Area of close film spots of 2003 year</div>`)[0];
+                popup_70cfbda8ab2cf02514ce316bbe783f2b.setContent(html_b237d4822ffaf0a5420ce0128857909e);
+            
+        
+
+        circle_be0bd7335c81a5ff3524d31f317f0f00.bindPopup(popup_70cfbda8ab2cf02514ce316bbe783f2b)
+        ;
+
+        
+    
+    
+            var layer_control_8ec6dad212e7f6d099a422bf70ec1fb5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_32dd58f4c2a0bd2a7864856f6a6df5a3,
+                },
+                overlays :  {
+                    "Near film spots" : feature_group_17f89779275d4bdccad3e4c144d22567,
+                    "Near film Area" : feature_group_b015b2f06c45635a004580666a734950,
+                },
+            };
+            L.control.layers(
+                layer_control_8ec6dad212e7f6d099a422bf70ec1fb5.base_layers,
+                layer_control_8ec6dad212e7f6d099a422bf70ec1fb5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a89556bf12d87131133a2c806553ae00);
+        
+</script>
+</html>
