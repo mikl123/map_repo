@@ -1,5 +1,11 @@
+"""
+Module for shrinking data
+"""
 import random
 def get_lines(path_to_list:str, number_lines:int):
+    """
+    Get radom films and create new file with it
+    """
     getted=""
     all_file=[]
     with open(path_to_list,"r",encoding="utf-8") as file_read:
