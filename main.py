@@ -39,6 +39,11 @@ path_to_dataset = args.path_to_dataset
 geolocator = Nominatim(user_agent="film_points.py")
 geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
 
+html_code="""
+<h4>Film name: {}</h4>
+<h3>Location name: {}</h3>
+"""
+
 with open(path_to_dataset,"r",encoding = "utf-8") as film_spots:
     dictionary = []
     counter = 0
@@ -80,8 +85,9 @@ with open(path_to_dataset,"r",encoding = "utf-8") as film_spots:
     tass_points(dictionary,index_to_tass)
     # Add markers
     for film in dictionary[:10]:
+        iframe=folium.IFrame(html = html_code.format(film[1],film[2]),width = 300,height = 150)
         fg_near_film_spot.add_child(folium.Marker(location = [film[0][0], film[0][1]],
-                            popup = f"Назва фільму:\n {film[1]}\n Назва місця:\n {film[2]}",
+                            popup = folium.Popup(iframe),
                             icon = folium.Icon()))
     fg_near_film_area = folium.FeatureGroup(name = "Near film Area")
     fg_near_film_area.add_child(folium.Circle(location = [latitude, longitude],
